@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro / Inicio de sesión</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="containerr" id="containerr">
+        <div class="form-container sign-up">
+            <form method="post">
+                <h1>Create Account</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+                <input type="text" placeholder="Nombre(s)" name="TxtNombre">
+                <input type="text" placeholder="Apellido(s)" name="TxtApellido">
+                <input type="email" placeholder="Correo" name="TxtCorreo">
+                <input type="password" placeholder="Contraseña" name="TxtContraseña">
+                <input type="hidden" name="formulario" value="signup">
+                <button>Sign In</button>
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form method="post">
+                <h1>Iniciar Sesión</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+                <label>Correo electrónico</label>
+                <input type="email" class="form-control" id="floatingEmail" name="txtcorreo" placeholder="nombre@ejemplo.com">
+                <label>Contraseña</label>
+                <input type="password" class="form-control" id="floatingPassword" name="txtcontraseña" placeholder="Ingrese su contraseña" autocomplete="off">
+                <input type="hidden" name="formulario" value="login">
+                <button type="submit" class="btn btn-outline-primary">Enviar</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Welcome Back!</h1>
+                    <p>¿Ya tienes cuenta? <br> Inicia sesión para buscar el mejor alojamiento para ti</p>
+                    <button class="hidden" id="login">Sign In</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>¿Aún no tienes cuenta?<br>¡Regístrate ahora mismo!</p>
+                    <button class="hidden" id="register">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
